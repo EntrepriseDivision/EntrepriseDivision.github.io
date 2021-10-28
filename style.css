@@ -1,12 +1,21 @@
+h1 {
+  font-family: "calibri", serif;
+  text-align: center;
+  background-color: lightblue;
+  border:#ddd; 
+  border-width:4px; 
+  border-style:solid;
+  margin:30px;
+  font-size: 25px;
+}
 #title {
 position: relative; 
 left: 150px;
-
 }
 #logo {
 position: absolute;
 top: 5px;
-right: 10px;
+right: 5px;
 border: 3px black groove;
 
 }
