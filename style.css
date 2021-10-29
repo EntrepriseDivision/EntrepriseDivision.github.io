@@ -1,43 +1,48 @@
-h1 {
-  font-family: "calibri", serif;
-  background-color: lightblue;
-  border:#ddd; 
-  border-width:4px; 
-  border-style:solid;
-  font-size: 25px;
-}
+//Couleur et placement du titre de la page web
 #title {
-position: relative; 
-left: 150px;
+  position: relative; 
+  left: 150px;
+  color:cornsilk;
 }
+//CSS du logo placé dans le coin du haut droit
 #logo {
-position: absolute;
-top: 5px;
-right: 5px;
-border: 3px black groove;
-
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: 3px black groove;
+}
+//Sous-titres
+#t1, #t2 {
+  background-color: rgb(161, 161, 212);
+  max-width: 50%;
+  margin: 2px;
+  border: #ddd;
+  border-width: 4px; 
+  border-style: solid;
+  font-family:"calibri", serif;
 }
 body {
   background-color: rgb(173, 109, 181)
 }
 #img1 {
-position: absolute;
-right: 10px;
-top: 120px;
+  position: absolute;
+  right: 10px;
+  top: 120px;
 }
 #img2 {
   position: absolute;
   right: 10px;
   top: 230px;
 }
-#description {
+#description, #mission {
   width: 450px;
   border: 3px black groove;
-}
-#mission {
-width: 450px;
-border: 3px black groove; 
-
+  font-family: Georgia;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  word-spacing: 1px;
+  background-color: rgb(221, 210, 210);
 }
 /* Place la barre de naviguation fixé au bas de la page. */
 .navbar {
@@ -69,9 +74,9 @@ border: 3px black groove;
   color: white;
 }
 #organigramme {
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
 }

@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
-   
-
-    <link href="jeu.css" rel="stylesheet" type="text/css" />
+    <link href="symboles.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
  <div id="bienvenueJeu"> <h2>Bienvenue au quiz Symboles Cachés ! </h1>
-<p> Insérez deux nombres dans la boîte et devine quelle opération a été utiliser pour la réponse.</p> </div>
-<h3> Question 1 </h3>
-<input type="number" id="num1Q1" name="num1Q1" /> <br>
-<input type="number" id="num2Q1" name="num2Q1" /> <br> 
-<input type="button" id="btnQ1"  name="btnQ1" onclick="calcule()" />
-<label for="btnQ1"> Soumettre! </label> 
-<div id= "divAffiche1">
-  </div> 
+ 
+<div class="instructions">
+  <h3> Instructions: </h3>
+  <p> Insérez deux nombres dans la boîte et devine quelle opération a été utiliser pour la réponse.</p> </div></div>
 
-  <p> Quelle operation est utiliser? </p> 
+
+<div class="boiteQ1">
+  
+  <br> 
+
+<div id="question1"> <h3 id="titreq1"> Question 1 :</h3>
+<div id= "divAffiche1">
+<input type="number" id="num1Q1" name="num1Q1" placeholder="Nombre 1"/> <br> 
+<input type="number" id="num2Q1" name="num2Q1" placeholder="Nombre 2" /> <br> <br> 
+
+<div id="bienvenueJeu">
+<input type="button" id="btnQ1"  name="btnQ1" onclick="calcule()" />
+
+<label for="btnQ1"> Soumettre! </label> </div>
+</div>
+</div>
+
+<img id="imgPaulD" src="https://www.hometeamsonline.com/photos/org/COLESECONDAIRECATHOL/homelogo.jpg" /> 
+  </div> 
+  <p id="operationInverse"> Rapelle toi, operation inverse! </p>
+  <div id="questionOperation"> <p> Quelle operation est utiliser? </p> 
+  <div id="divAffiche2">
  <input id="rad1" name="rad1" type="radio" value="+" /> 
 <label for="rad1">+</label> <br>
+
  <input id="rad2" name="rad1" type="radio" value="-" /> 
 <label for="rad2">-</label> <br>
+
  <input id="rad3" name="rad1" type="radio" value="*" /> 
 <label for="rad3">x</label> <br>
+
  <input id="rad4" name="rad1" type="radio" value="/" /> 
-<label for="rad4">/</label> <br>
-<input type ="button" id="btn2Q1" name="btn2Q1" onclick="calcule2()"/>
-<label for="btn2Q1"> Verifier votre reponse </label>
-<div id="divAffiche2">
-  
+<label for="rad4">/</label> <br> <br> 
+<input type="button" id="btn2Q1" onclick="calcule2()" /> 
+<label for="btn2Q1"> Soumettre reponse </label> 
+</div>
 </div> 
+<a href="jeux\index.html"> Retour </a>
+
+<div id="prochainPage"> <a href="symboles2.html"> <img src="https://cdn-icons-png.flaticon.com/512/25/25426.png" width="80" </a> </div> 
 
   <script src="script.js"> </script>
   </body>

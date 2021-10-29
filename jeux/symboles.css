@@ -1,0 +1,75 @@
+body {
+  background-color: rgb(173, 109, 181);
+}
+h2{
+  text-align: center;
+}
+#bienvenueJeu {
+align-content: center;
+align-items: center;
+text-align: center;
+font-family: "calibri", serif;
+ }
+ #imgPaulD {
+position: absolute;
+right: 10px;
+top: 100px;
+ }
+ #reponq1 {
+    color: rgb(44, 44, 139);
+    font-style: oblique;
+ }
+
+ #operationInverse {
+text-align: right;
+position: absolute;
+right: 30px;
+font-size: 20px;
+border: 3px black groove; 
+max-width: 250px;
+display: inline-block;
+ }
+ #mauvRep {
+   color: red;
+ }
+ #bonneRep {
+   color: green;
+ }
+input[type=number] {
+  color: blue;
+  height: 30px;
+  font-family: Courier New;
+  font-size: 14px;
+  text-align: center;
+  background-color: rgb(73, 185, 230);
+  font-weight: bold;
+}
+input[type=number]::-webkit-outer-spin-button { 
+opacity: 3;
+}
+#titreq1 {
+  color: black;
+  font-family: "calibri", serif;
+  margin: auto;
+  
+}
+.instructions {
+  display: inline block;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 2px; 
+  width: 200px;
+  height: 150px;
+  border-style: solid;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.boiteQ1 {
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 2px; 
+  width: 200px;
+  height: 167px;
+  border-style: solid;
+  text-align: center;
+}
