@@ -17,7 +17,6 @@ top: 100px;
  }
  #reponq1 {
     color: rgb(44, 44, 139);
-    font-style: oblique;
  }
 
  #operationInverse {
@@ -69,7 +68,15 @@ opacity: 3;
   margin-right: 5px;
   border: 2px; 
   width: 200px;
-  height: 167px;
+  height: 170px;
   border-style: solid;
   text-align: center;
+  margin-bottom: 5px;
+}
+#boitequestion {
+  font-size: 13px;
+}
+#questionOperation {
+  margin-top: 5px;
+
 }

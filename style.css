@@ -1,18 +1,19 @@
-//Couleur et placement du titre de la page web
+/* CSS pour titre de la page : Entreprise Division */
 #title {
-  position: relative; 
-  left: 150px;
+  position:relative; 
+  left:150px;
   color:cornsilk;
 }
-//CSS du logo placé dans le coin du haut droit
+/* Affichage du logo dans le coin haut a droite avec bordure noir */
 #logo {
   position: absolute;
   top: 5px;
   right: 5px;
   border: 3px black groove;
+  float: right;
 }
-//Sous-titres
-#t1, #t2 {
+/* Sous-titres */
+#t1, #t2, #t3 {
   background-color: rgb(161, 161, 212);
   max-width: 50%;
   margin: 2px;
@@ -21,9 +22,11 @@
   border-style: solid;
   font-family:"calibri", serif;
 }
+/* Le body de jeu.html, plan.html, index.html et ressources.html utiliseront le meme style. */
 body {
   background-color: rgb(173, 109, 181)
 }
+/* CSS pour les deux images qui decrivent le site web */
 #img1 {
   position: absolute;
   right: 10px;
@@ -34,7 +37,8 @@ body {
   right: 10px;
   top: 230px;
 }
-#description, #mission {
+/* Boite de texte fonctionnement et mission */
+#description, #mission, #fondateurs {
   width: 450px;
   border: 3px black groove;
   font-family: Georgia;

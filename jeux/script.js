@@ -17,7 +17,7 @@ message1 += " " + (num1 / num2);
 ("Rien selecter");
 }
 var affiche = document.getElementById("divAffiche1");
-        var message = "<div id='reponq1'><strong> La reponse est:" + message1 + " </strong></div>"
+        var message = "<div id='reponq1'><strong> La reponse est:" + message1 + "<br><br> Quelle opération a été utilisé? <br>" + num1 + " ⍰ " + num2 + " =" + message1 + "</strong></div>"
             affiche.innerHTML=message; 
 
 
@@ -63,11 +63,3 @@ var affiche = document.getElementById("divAffiche1");
 
 
  }
-
-
-
-
-
-  
-
-

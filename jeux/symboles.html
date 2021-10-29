@@ -3,33 +3,33 @@
   <head>
     <link href="symboles.css" rel="stylesheet" type="text/css" />
   </head>
-
   <body>
- <div id="bienvenueJeu"> <h2>Bienvenue au quiz Symboles Cachés ! </h1>
- 
-<div class="instructions">
-  <h3> Instructions: </h3>
-  <p> Insérez deux nombres dans la boîte et devine quelle opération a été utiliser pour la réponse.</p> </div></div>
-
-
-<div class="boiteQ1">
-  
-  <br> 
-
-<div id="question1"> <h3 id="titreq1"> Question 1 :</h3>
-<div id= "divAffiche1">
-<input type="number" id="num1Q1" name="num1Q1" placeholder="Nombre 1"/> <br> 
-<input type="number" id="num2Q1" name="num2Q1" placeholder="Nombre 2" /> <br> <br> 
-
-<div id="bienvenueJeu">
-<input type="button" id="btnQ1"  name="btnQ1" onclick="calcule()" />
-
-<label for="btnQ1"> Soumettre! </label> </div>
-</div>
-</div>
-
-<img id="imgPaulD" src="https://www.hometeamsonline.com/photos/org/COLESECONDAIRECATHOL/homelogo.jpg" /> 
-  </div> 
+  <!-- Titre/h2 de la page web. !-->
+    <div id="bienvenueJeu"> <h2>Bienvenue au quiz Symboles Cachés ! </h1>
+  <!-- Boite "Instructions" pour faciliter la comprehension de l'utilisateur. !-->
+      <div class="instructions">
+        <h3> Instructions : </h3>
+        <p> Insérez deux nombres dans la boîte et devine quelle opération a été utiliser pour obtenir la réponse affichée.</p> 
+      </div>
+    </div>
+    <!-- Div cree pour la boite qui encadre la premiere question. !-->
+    <div class="boiteQ1"> <br> 
+    <!-- Titre de la questions 1. !-->
+      <div id="question1"> <h3 id="titreq1"> Question 1 :</h3>
+    <!-- Div pour creer deux boites auquelles l'utlisateur insere deux nombres. Le placeholder permet que "Nombre 1" et "Nombre 2" apparaissent dans l'arriere-plan des boites a insertion. Ceci ajoute de la precision pour l'utilisateur. !-->
+      <div id= "divAffiche1">
+        <input type="number" id="num1Q1" name="num1Q1" placeholder="Nombre 1"/> <br> 
+        <input type="number" id="num2Q1" name="num2Q1" placeholder="Nombre 2" /> <br> <br> 
+    <!-- En cliquant le bouton "Soumettre", onclick active la fonction "calcule()" (description supplementaire dans le js). !-->
+        <div id="bienvenueJeu">
+        <input type="button" id="btnQ1"  name="btnQ1" onclick="calcule()" />
+    <!-- Label qui affiche "Soumettre" pour le bouton de la question 1. !-->
+        <label for="btnQ1"> Soumettre! </label> 
+        </div>
+      </div>
+    </div>
+    <!-- Insertion du logo Paul-D. !-->
+    <img id="imgPaulD" src="https://www.hometeamsonline.com/photos/org/COLESECONDAIRECATHOL/homelogo.jpg" />  
   <p id="operationInverse"> Rapelle toi, operation inverse! </p>
   <div id="questionOperation"> <p> Quelle operation est utiliser? </p> 
   <div id="divAffiche2">
@@ -48,9 +48,8 @@
 <label for="btn2Q1"> Soumettre reponse </label> 
 </div>
 </div> 
-<a href="jeux\index.html"> Retour </a>
 
-<div id="prochainPage"> <a href="symboles2.html"> <img src="https://cdn-icons-png.flaticon.com/512/25/25426.png" width="80" </a> </div> 
+<div id="prochainPage"> <a href="accueil/index.html"> <img src="https://cdn-icons-png.flaticon.com/512/25/25426.png" width="80" </a> </div> 
 
   <script src="script.js"> </script>
   </body>
