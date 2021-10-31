@@ -1,4 +1,4 @@
- var messagePoint = "";
+var messagePoint = "";
  document.getElementById("btnQ1").onclick = function calcule() {
 var message1 = ""
 var num1 = parseInt(document.getElementById("num1Q1").value);
