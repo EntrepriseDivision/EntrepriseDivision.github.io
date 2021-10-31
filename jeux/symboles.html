@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
+  <!-- Page web du jeu "Symboles Cachés". Code dans le <head> permet de lier le ficher symboles.css au html. !-->
   <head>
-    <link href="symboles.css" rel="stylesheet" type="text/css" />
+    <link href="symboles.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
   <!-- Titre/h2 de la page web. !-->
     <div id="bienvenueJeu"> <h2>Bienvenue au quiz Symboles Cachés ! </h1>
-  <!-- Boite "Instructions" pour faciliter la comprehension de l'utilisateur. !-->
+  <!-- Boite "Directives" pour faciliter la comprehension de l'utilisateur. !-->
       <div class="instructions">
-        <h3> Instructions : </h3>
+        <h3> Directives : </h3>
         <p> Insérez deux nombres dans la boîte et devine quelle opération a été utiliser pour obtenir la réponse affichée.</p> 
       </div>
     </div>
@@ -30,26 +31,26 @@
     </div>
     <!-- Insertion du logo Paul-D. !-->
     <img id="imgPaulD" src="https://www.hometeamsonline.com/photos/org/COLESECONDAIRECATHOL/homelogo.jpg" />  
-  <p id="operationInverse"> Rapelle toi, operation inverse! </p>
-  <div id="questionOperation"> <p> Quelle operation est utiliser? </p> 
+  <p id="operationInverse"> Rappel toi, opération inverse! </p>
+  <div id="questionOperation"> <p> Quelle opération est utilisée? </p> 
   <div id="divAffiche2">
  <input id="rad1" name="rad1" type="radio" value="+" /> 
-<label for="rad1">+</label> <br>
+  <label for="rad1">+</label> <br>
 
  <input id="rad2" name="rad1" type="radio" value="-" /> 
-<label for="rad2">-</label> <br>
+  <label for="rad2">-</label> <br>
 
  <input id="rad3" name="rad1" type="radio" value="*" /> 
-<label for="rad3">x</label> <br>
+  <label for="rad3">x</label> <br>
 
  <input id="rad4" name="rad1" type="radio" value="/" /> 
-<label for="rad4">/</label> <br> <br> 
-<input type="button" id="btn2Q1" onclick="calcule2()" /> 
-<label for="btn2Q1"> Soumettre reponse </label> 
-</div>
-</div> 
+  <label for="rad4">/</label> <br> <br> 
+  <input type="button" id="btn2Q1" onclick="calcule2()" /> 
+  <label for="btn2Q1"> Soumettre votre réponse </label> 
+  </div>
+  </div> 
 
-<div id="prochainPage"> <a href="accueil/index.html"> <img src="https://cdn-icons-png.flaticon.com/512/25/25426.png" width="80" </a> </div> 
+  <div id="prochainPage"> <a href="accueil/index.html"> <img src="https://cdn-icons-png.flaticon.com/512/25/25426.png" width="80" </a> </div> 
 
   <script src="script.js"> </script>
   </body>

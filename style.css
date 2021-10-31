@@ -68,19 +68,21 @@ body {
   font-size: 17px;
 }
 
-/* Ajout de coleur lors du hover */
+/* Ajout de couleur lors du hover */
 .navbar a:hover {
   background-color: #ddd;
   color: black;
 }
+/*Ajout de couleur une fois une page web selectionnee*/
 .navbar a.active {
   background-color: steelblue;
   color: white;
 }
+/*Image de l'organigramme devait effectuer une rotation pour pouvoir etre du bon cote*/
 #organigramme {
-  -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
+  webkit-transform: rotate(270deg);
+  moz-transform: rotate(270deg);
+  o-transform: rotate(270deg);
+  ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }

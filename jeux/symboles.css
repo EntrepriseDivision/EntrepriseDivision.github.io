@@ -1,39 +1,47 @@
+/*Couleur de l'arriere-plan de la page web*/
 body {
   background-color: rgb(173, 109, 181);
 }
-h2{
+/* H2/Titre de la page place au centre de la page */
+h2 {
   text-align: center;
 }
+/* Style des elements dans la boite de la question 1 */
 #bienvenueJeu {
-align-content: center;
-align-items: center;
-text-align: center;
-font-family: "calibri", serif;
- }
- #imgPaulD {
-position: absolute;
-right: 10px;
-top: 100px;
- }
- #reponq1 {
-    color: rgb(44, 44, 139);
- }
-
- #operationInverse {
-text-align: right;
-position: absolute;
-right: 30px;
-font-size: 20px;
-border: 3px black groove; 
-max-width: 250px;
-display: inline-block;
- }
- #mauvRep {
-   color: red;
- }
- #bonneRep {
-   color: green;
- }
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "calibri", serif;
+}
+/* Logo Paul-D emplacement sur la page web */
+#imgPaulD {
+  position: absolute;
+  right: 10px;
+  top: 100px;
+}
+/* Ajoute la couleur bleu au texte qui apparait comme onclick sur soumettre */
+#reponq1 {
+  color: rgb(44, 44, 139);
+}
+/* Style pour text rappel toi */
+#operationInverse {
+  text-align: right;
+  position: absolute;
+  right: 30px;
+  font-size: 20px;
+  border: 3px black groove; 
+  max-width: 250px;
+  display: inline-block;
+}
+/* Si l'utilisateur soumet une mauvaise reponse, ce code change la couleur du texte apparait indiquant "Mauvaise reponse. Votre pointage est 0", en rouge. */
+#mauvRep {
+ color: red;
+}
+/* Si l'utlisateur soumet une bonne reponse, le texte apparait en vert grace a ce code. */
+#bonneRep {
+  color: green;
+}
+/* Style du texte qui apparait comme onclick apres avoir soumis les deux nombres a inserer dans l'equation. */
 input[type=number] {
   color: blue;
   height: 30px;
@@ -43,15 +51,17 @@ input[type=number] {
   background-color: rgb(73, 185, 230);
   font-weight: bold;
 }
+/* */
 input[type=number]::-webkit-outer-spin-button { 
 opacity: 3;
 }
+/* Style pour "Question 1" */
 #titreq1 {
   color: black;
   font-family: "calibri", serif;
   margin: auto;
-  
 }
+/* Style et emplacement de la boite contenant les directives du jeu. */
 .instructions {
   display: inline block;
   margin-left: 5px;
@@ -63,6 +73,7 @@ opacity: 3;
   text-align: center;
   margin-bottom: 5px;
 }
+/* Style et emplacement des informations retrouvees dans la boite de la question 1 */
 .boiteQ1 {
   margin-left: 5px;
   margin-right: 5px;
@@ -73,10 +84,11 @@ opacity: 3;
   text-align: center;
   margin-bottom: 5px;
 }
+/* Grandeur de l'ecriture de la question. */
 #boitequestion {
   font-size: 13px;
 }
+/* Margin qui separe la question de les autres informations et la boite. */
 #questionOperation {
-  margin-top: 5px;
-
+  margin-top: 15px;
 }
