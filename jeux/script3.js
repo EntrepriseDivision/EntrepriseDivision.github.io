@@ -1,4 +1,4 @@
-var messagePoint1 = "";
+var messagePoint3 = "";
  document.getElementById("btnQ1").onclick = function calcule() {
 var message1 = ""
 var num1 = parseInt(document.getElementById("num1Q1").value);
@@ -33,27 +33,27 @@ var affiche = document.getElementById("divAffiche1");
         
      if (radioOperation1[0].checked == true && randomNumber1 == 1) {
     message2 += "Bonne réponse";
-    messagePoint1 += 1;
+    messagePoint3 += 1;
      } else if (radioOperation1[1].checked == true && randomNumber1 == 2) {
     message2 += "Bonne réponse";
-    messagePoint1 += 1;
+    messagePoint3 += 1;
      } else if (radioOperation1[2].checked == true && randomNumber1 == 3) {
     message2 += "Bonne réponse";
-    messagePoint1 += 1;
+    messagePoint3 += 1;
      } else if (radioOperation1[3].checked == true && randomNumber1 == 4) {
     message2 += "Bonne réponse";
-    messagePoint1 += 1;
+    messagePoint3 += 1;
      } else {
     message2 += "Mauvaise réponse";
-    messagePoint1 += 0;
+    messagePoint3 += 0;
      }
 
     var affiche2 = document.getElementById("divAffiche2");
     if (message2 == "Bonne réponse") {
-        var message3 =  "<div id='bonneRep'><strong>" + message2 + "<br>  Vous avez gagnez un point" + ".</strong> <div id='prochainPage'><a href='symboles2.html'><img src='https://cdn-icons-png.flaticon.com/512/25/25426.png' width='80' </a> </div></div>"
+        var message3 =  "<div id='bonneRep'><strong>" + message2 + "<br>  Vous avez gagnez un point " + ".</strong> <div id='prochainPage'><a href='symboles2.html'><img src='https://cdn-icons-png.flaticon.com/512/25/25426.png' width='80' </a> </div></div>"
             affiche2.innerHTML=message3; 
     } else if (message2 == "Mauvaise réponse") {
-      var message3 = "<div id='mauvRep'><strong>" + message2 + "<br> Votre pointage n'a pas changer" + ". <div id='prochainPage'><a href='symboles2.html'><img src='https://cdn-icons-png.flaticon.com/512/25/25426.png' width='80' </a> </div> </strong></div>"
+      var message3 = "<div id='mauvRep'><strong>" + message2 + "<br> Votre pointage n'a pas changer" + ". <div id='prochainPage'><a href='symboles2.html'><img src='https://cdn-icons-png.flaticon.com/512/25/25426.png' width='80' </a> </div> <</strong></div>"
       affiche2.innerHTML=message3;
     }
 

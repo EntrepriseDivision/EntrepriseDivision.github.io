@@ -1,4 +1,4 @@
-var messagePoint1 = "";
+var messagePoint5 = "";
  document.getElementById("btnQ1").onclick = function calcule() {
 var message1 = ""
 var num1 = parseInt(document.getElementById("num1Q1").value);
@@ -33,19 +33,19 @@ var affiche = document.getElementById("divAffiche1");
         
      if (radioOperation1[0].checked == true && randomNumber1 == 1) {
     message2 += "Bonne réponse";
-    messagePoint1 += 1;
+    messagePoint5 += 1;
      } else if (radioOperation1[1].checked == true && randomNumber1 == 2) {
     message2 += "Bonne réponse";
-    messagePoint1 += 1;
+    messagePoint5 += 1;
      } else if (radioOperation1[2].checked == true && randomNumber1 == 3) {
     message2 += "Bonne réponse";
-    messagePoint1 += 1;
+    messagePoint5 += 1;
      } else if (radioOperation1[3].checked == true && randomNumber1 == 4) {
     message2 += "Bonne réponse";
-    messagePoint1 += 1;
+    messagePoint5 += 1;
      } else {
     message2 += "Mauvaise réponse";
-    messagePoint1 += 0;
+    messagePoint5 += 0;
      }
 
     var affiche2 = document.getElementById("divAffiche2");

@@ -18,33 +18,33 @@
     <!-- Div pour la boîte de la première question et toutes les informations qui y sont placées. !-->
     <div class="boiteQ1"> <br> 
   <!-- Titre de la question 1. Div pour la première question !-->
-      <div id="question1"> <h3 id="titreq1"> Question 1 :</h3>
-  <!-- Div pour créer deux boites auxquelles l'utilisateur insère deux nombres. Le placeholder permet que "Nombre 1" et "Nombre 2" apparaissent dans l'arrière-plan des boîtes à insertion. Ceci ajoute de la précision pour l'utilisateur. Div pour les numéros insérés par l'utilisateur. !-->
+      <div id="question1"> <h3 id="titreq1"> Question 3 :</h3>
+    <!-- Div pour créer deux boites auxquelles l'utilisateur insère deux nombres. Le placeholder permet que "Nombre 1" et "Nombre 2" apparaissent dans l'arrière-plan des boîtes à insertion. Ceci ajoute de la précision pour l'utilisateur. Div pour les numéros insérés par l'utilisateur. !-->
       <div id= "divAffiche1">
         <input type="number" id="num1Q1" name="num1Q1" placeholder="Nombre 1"/> <br> 
         <input type="number" id="num2Q1" name="num2Q1" placeholder="Nombre 2" /> <br> <br>
-  <!-- Div ferme le id "divAffiche1" !-->
+    <!-- Div ferme le id "divAffiche1" !-->
       </div>
-  <!-- En cliquant sur le bouton "Soumettre", onclick active la fonction "calcule()" (description supplémentaire dans le js). Div "bienvenueJeu" qui ajoute le bouton et le calcule au id. !-->
+    <!-- En cliquant sur le bouton "Soumettre", onclick active la fonction "calcule()" (description supplémentaire dans le js). Div "bienvenueJeu" qui ajoute le bouton et le calcule au id. !-->
         <div id="bienvenueJeu">
           <input type="button" id="btnQ1"  name="btnQ1" onclick="calcule()" />
-  <!-- Label qui affiche "Soumettre" pour le bouton de la question 1. !-->
+    <!-- Label qui affiche "Soumettre" pour le bouton de la question 1. !-->
             <label for="btnQ1"> Soumettre! </label>
-  <!-- Div id "bienvenueJeu" ferme!--> 
+    <!-- Div id "bienvenueJeu" ferme!--> 
         </div>
-  <!-- Div id "boiteQ1" ferme !-->
+    <!-- Div id "boiteQ1" ferme !-->
       </div>
-  <!-- Div id "bienvenueJeu" ferme !-->
+    <!-- Div id "bienvenueJeu" ferme !-->
     </div>
-  <!-- Insertion du logo Paul-D. !-->
+    <!-- Insertion du logo Paul-D. !-->
     <img id="imgPaulD" src="https://www.hometeamsonline.com/photos/org/COLESECONDAIRECATHOL/homelogo.jpg" /> 
-  <!-- Div ouvre "questioncss" !-->
-    <div id="operationcss">
   <!-- Div pour id"questionOperation", question avec choix multiples !-->
+  <div id="operationcss">
     <div id="questionOperation"> <p id="optitre"> Quelle opération a été utilisée? </p> 
       <div id="divAffiche2">
         <div id="optext">
   <!-- Div pour les choix multiples !--><!-- Option #1 : addition !-->
+  <div ="">
         <input id="rad1" name="rad1" type="radio" value="+" />
           <label for="rad1">+</label> <br>
   <!-- Option #2 : soustraction !-->
@@ -64,9 +64,11 @@
       </div>
   <!-- Div ferme "questionOperation" !-->
     </div> 
-  <!-- Div ferme "operationcss" !-->
+  <!-- Div pour "prochainPage" et permettre de se rendre à la prochaine question. Href dans l'image de la flèche noire. !-->
+    <div id="prochainPage"> <a href="symboles4.html"> <img src="https://cdn-icons-png.flaticon.com/512/25/25426.png" width="80" </a> 
+  <!-- Div ferme "prochainPage" !-->
+    </div> 
     </div>
-  <!-- Pemert de faire un lien au ficher javascript. Lorsqu'il est place au haut de la page dans le head le code ne s'execute pas de la bonne maniere. !-->
-  <script src="script.js"> </script>
+  <script src="script3.js"> </script>
   </body>
 </html>
