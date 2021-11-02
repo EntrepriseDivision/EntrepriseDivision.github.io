@@ -1,72 +1,62 @@
 var messagePoint4 = "";
- document.getElementById("btnQ1").onclick = function calcule() {
-var message1 = ""
-var num1 = parseInt(document.getElementById("num1Q1").value);
-var num2 = parseInt(document.getElementById("num2Q1").value);
-var num3 = parseInt(document.getElementById("num3Q1").value);
-var randomNumber1 = Math.floor(Math.random() * 4) + 1; 
- console.log(randomNumber1);
-if(randomNumber1 == 1) {
- message1 += " " + ((num1+num2)+num3);
-} else if (randomNumber1 == 2) {
-message1 += " " + ((num1-num2)-num3);
-} else if (randomNumber1 == 3) {
-message1 += " " + ( (num1 * num2) * num3);
-} else if (randomNumber1 == 4) {
-message1 += " " + ( (num1 / num2 )/ num3);
+ document.getElementById("q4btnQ1").onclick = function q4calcule() {
+var q4message1 = ""
+var q4num1 = parseInt(document.getElementById("q4num1Q1").value);
+var q4num2 = parseInt(document.getElementById("q4num2Q1").value);
+var q4num3 = parseInt(document.getElementById("q4num3Q1").value);
+var randomNumber4 = Math.floor(Math.random() * 4) + 1; 
+ 
+if(randomNumber4 == 1) {
+ q4message1 += " " + ((q4num1+q4num2)+q4num3);
+} else if (randomNumber4 == 2) {
+q4message1 += " " + ((q4num1-q4num2)-q4num3);
+} else if (randomNumber4 == 3) {
+q4message1 += " " + ( (q4num1 * q4num2) * q4num3);
+} else if (randomNumber4 == 4) {
+q4message1 += " " + ( (q4num1 / q4num2 )/ q4num3);
 } else {
 ("Rien selecter");
 }
-var affiche = document.getElementById("divAffiche1");
-        var message = "<div id='reponq1'><strong> La réponse est:" + message1 + "<br><br> Équation : <br>" + num1 + " ⍰ " + num2 + " ⍰ "  + num3 + " =" + message1 + "</strong></div>"
-            affiche.innerHTML=message; 
+var q4affiche = document.getElementById("q4divAffiche1");
+        var q4message = "<div id='q4reponq1'><strong> La réponse est:" + q4message1 + "<br><br> Équation : <br>" + q4num1 + " ⍰ " + q4num2 + " ⍰ "  + q4num3 + " =" + q4message1 + "</strong></div>"
+            q4affiche.innerHTML=q4message; 
 
 
- document.getElementById("btn2Q1").onclick = function calcule2(){ 
- var radioOperation1 = document.getElementsByName("rad1");
- var message2 = "";
- var operation1 = "";
-       for (var i = 0; i < radioOperation1.length; i++) {
-           if (radioOperation1[i].checked) {
-               operation1 = radioOperation1[i].value;
+ document.getElementById("q4btn2Q1").onclick = function q4calcule2(){ 
+ var q4radioOperation1 = document.getElementsByName("q4rad1");
+ var q4message2 = "";
+ var q4operation1 = "";
+       for (var i = 0; i < q4radioOperation1.length; i++) {
+           if (q4radioOperation1[i].checked) {
+               q4operation1 = q4radioOperation1[i].value;
            } 
        } 
         
-     if (radioOperation1[0].checked == true && randomNumber1 == 1) {
-    message2 += "Bonne réponse";
+     if (q4radioOperation1[0].checked == true && randomNumber4 == 1) {
+    q4message2 += "Bonne réponse";
     messagePoint4 += 1;
-     } else if (radioOperation1[1].checked == true && randomNumber1 == 2) {
-    message2 += "Bonne réponse";
+     } else if (q4radioOperation1[1].checked == true && randomNumber4 == 2) {
+    q4message2 += "Bonne réponse";
     messagePoint4 += 1;
-     } else if (radioOperation1[2].checked == true && randomNumber1 == 3) {
-    message2 += "Bonne réponse";
+     } else if (q4radioOperation1[2].checked == true && randomNumber4== 3) {
+    q4message2 += "Bonne réponse";
     messagePoint4 += 1;
-     } else if (radioOperation1[3].checked == true && randomNumber1 == 4) {
-    message2 += "Bonne réponse";
+     } else if (q4radioOperation1[3].checked == true &&randomNumber4 == 4) {
+    q4message2 += "Bonne réponse";
     messagePoint4 += 1;
      } else {
-    message2 += "Mauvaise réponse";
+    q4message2 += "Mauvaise réponse";
     messagePoint4 += 0;
      }
 
-    var affiche2 = document.getElementById("divAffiche2");
-    if (message2 == "Bonne réponse") {
-        var message3 =  "<div id='bonneRep'><strong>" + message2 + "<br>  Vous avez gagnez un point" + ". <div id='prochainPage'><a href='symboles5.html'><img src='https://cdn-icons-png.flaticon.com/512/25/25426.png' width='80' </a> </div> </strong></div>"
-            affiche2.innerHTML=message3; 
-    } else if (message2 == "Mauvaise réponse") {
-      var message3 = "<div id='mauvRep'><strong>" + message2 + "<br> Votre pointage n'a pas changer" +  ". <div id='prochainPage'><a href='symboles5.html'><img src='https://cdn-icons-png.flaticon.com/512/25/25426.png' width='80' </a> </div> </strong></div>"
-      affiche2.innerHTML=message3;
-    }
-
- 
+    var q4affiche2 = document.getElementById("q4divAffiche2");
+    if (q4message2 == "Bonne réponse") {
+        var q4message3 =  "<div id='q4bonneRep'><strong>" + q4message2 + "<br>  Vous avez gagnez un point" + ". <div id='q4prochainPage'><a href='symboles5.html'><img src='https://cdn-icons-png.flaticon.com/512/25/25426.png' width='80' </a> </div> </strong></div>"
+            q4affiche2.innerHTML=q4message3; 
+    } else if (q4message2 == "Mauvaise réponse") {
+      var q4message3 = "<div id='q4mauvRep'><strong>" + q4message2 + "<br> Votre pointage n'a pas changer" +  ". <div id='q4prochainPage'><a href='symboles5.html'><img src='https://cdn-icons-png.flaticon.com/512/25/25426.png' width='80' </a> </div> </strong></div>"
+      q4affiche2.innerHTML=q4message3;
+    } 
  }
-
-
-
-
-
-
-
-
 
  }

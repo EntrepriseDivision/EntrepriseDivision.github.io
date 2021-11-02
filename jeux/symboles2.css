@@ -20,15 +20,51 @@ h2 {
   top: 100px;
 }
 /* Ajoute la couleur bleu au texte qui apparait comme onclick sur soumettre */
-#reponq1 {
+#q1reponq1 {
+  color: rgb(44, 44, 139);
+}
+#q2reponq1 {
+  color: rgb(44, 44, 139);
+}
+#q3reponq1 {
+  color: rgb(44, 44, 139);
+}
+#q4reponq1 {
+  color: rgb(44, 44, 139);
+}
+#q5reponq1 {
   color: rgb(44, 44, 139);
 }
 /* Si l'utilisateur soumet une mauvaise reponse, ce code change la couleur du texte apparait indiquant "Mauvaise reponse. Votre pointage est 0", en rouge. */
 #mauvRep {
  color: red;
 }
+#q2mauvRep {
+ color: red;
+}
+#q3mauvRep {
+ color: red;
+}
+#q4mauvRep {
+ color: red;
+}
+#q5mauvRep {
+ color: red;
+}
 /* Si l'utlisateur soumet une bonne reponse, le texte apparait en vert grace a ce code. */
 #bonneRep {
+  color: green;
+}
+#q2bonneRep {
+  color: green;
+}
+#q3bonneRep {
+  color: green;
+}
+#q4bonneRep {
+  color: green;
+}
+#q5bonneRep {
   color: green;
 }
 /* Style du texte qui apparait comme onclick apres avoir soumis les deux nombres a inserer dans l'equation. */

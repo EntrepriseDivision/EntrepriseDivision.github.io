@@ -4,7 +4,7 @@
   <title> Planification </title>
   <link rel="stylesheet" href="style.css"> 
 </head>
-<body>
+<body id"planifi">
   <!-- Liens internes qui apporte l'utilisateur a la section du plan voulu.Le #sous-titre est place dans la table des matieres et dans le h2 de chaque section. !-->
   <p> <h2>Table des matières</h2>
   <ul>
@@ -12,13 +12,17 @@
     <li><a href="#visuelle">Conception visuelle</a></li>
     <li><a href="#gramme">Organigramme</a></li>
     <li><a href="#pseudo">Pseudo-code</a></li>
-    </ul></p>
+    <li><a href="#testing">Testing</a></li>
+    <li><a href="#entretien">Entretien</a></li>
+  </ul> </p>
   <div>
-    <h2 class="soustitre" id="gantt">GANTT :</h2>
+    <h2 class="soustitre" id="gantt",>GANTT</h2>
   </div>
+  <!-- Image du GANTT !-->
+  <img src="images/GANTT.png" alt"gantt" width="300">
   <!-- Section du cahier de charges "Conception visuelle" avec images de chaque page web. !-->
   <div>
-    <h2 class="soustitre" id="visuelle">Conception visuelle des pages web :</h2>
+    <h2 class="soustitre" id="visuelle">Conceptions visuelles</h2>
   </div>
   <img src="images/IMG_3455.JPG" alt"plan-index.html" width="150">
   <img src="images/IMG_3456.JPG" alt"plan-symboles.html" width="150">
@@ -27,13 +31,22 @@
   <img src="images/IMG_3462.JPG" alt"plan-jeu.html" width="150">
   <!-- Section du cahier de charges "Organigramme" avec image. !-->
   <div>
-    <h2 class="soustitre" id="gramme">Organigramme :</h2>
+    <h2 class="soustitre" id="gramme">Organigramme</h2>
   </div>
   <img id="organigramme" src="images/IMG_3463.JPG" alt"organigramme" width="150">
   <!-- Section du cahier de charges "Pseudo-code" avec image. !-->
   <div>
-    <h2 class="soustitre" id="pseudo">Pseudo-code :</h2>
+    <h2 class="soustitre" id="pseudo">Pseudo-code</h2>
   </div>
+  <!-- Section du cahier de charges "Testing" avec image et reponse aux questions demandees. !-->
+  <div>
+    <h2 class="soustitre" id="testing">Testing</h2>
+  </div>
+  <!-- Section du cahier de charges et de la video explicative "Entretien". L'entretien du jeu est tres important pour le futur et le cycle de la creation d'un site web. !-->
+  <div id="entretien">
+    <h2 class="soustitre">Entretien</h2>
+    <p>Les systèmes d’exploitation évoluent constamment et introduisent de nouvelles technologies. Certaines évolutions peuvent affecter le fonctionnement de notre jeu magnifique. Par exemple, lorsque “Flash Player” a été abandonné, plusieurs applications qui dépendent de ce service ont cessé de fonctionner. Pour assurer le fonctionnement des “Symboles Cachés”, il faudra <b>changer certains paramètres du jeu</b> pour assurer d’offrir un jeu de haute qualité au marché cible. D’abord, lorsque le curriculum de mathématiques est modifié, il faudra peut-être <b>changer le style de question ou son niveau de difficulté</b> en corrélation avec ce changement. De plus, de <b>nouvelles techniques de résolution de problèmes mathématiques</b> sont constamment recherchés et pourraient être implémentés dans notre jeu. Pour ajouter, la page web de <b>ressources d’aide</b> devra être consultée annuellement pour vérifier que les meilleurs services d’aide mathématiques sont disponibles à un clic pour les utilisateurs de notre jeu. Ensuite, l’ajout de jeux mathématiques pour <b>tous les niveaux d’éducation</b> à l’élémentaire et au secondaire. Finalement, nous allons envoyer des <b>formulaires</b> aux utilisateurs fréquents pour recevoir des <b>suggestions du public</b> et prioriser les changements à effectuer. Bref, notre code est très efficace et nous permettra de faire plusieurs changements dans le futur pour améliorer et réaliser un jeu éducatif et amusant pour les années à venir.</p>
+  </div><br><br><br>
   <!-- Le code suivant a été copié, mais modifier pour mes paramètres en consultant ce site https://www.w3schools.com/css/css_navbar.asp -->
   <div class="navbar">
     <a href="index.html""#acceuil">Accueil</a>

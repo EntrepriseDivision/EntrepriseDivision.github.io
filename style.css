@@ -4,6 +4,9 @@
   left:150px;
   color:cornsilk;
 }
+h1 {
+  font-family: Roboto;
+}
 /* Affichage du logo dans le coin haut a droite avec bordure noir */
 #logo {
   position: absolute;
@@ -85,4 +88,9 @@ body {
   o-transform: rotate(270deg);
   ms-transform: rotate(270deg);
   transform: rotate(270deg);
+}
+/*Style des sous-titres et du texte*/
+#entretien, #gantt, #gramme, #visuelle, #pseudo, #testing {
+  font-family: Roboto;
+  line-height : 1.5em;
 }
