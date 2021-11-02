@@ -16,6 +16,10 @@
       </div>
   <!-- Div ferme le id bienvenueJeu !-->
     </div>
+
+<div id="gamelink">
+        <img src="v3.jpg"width="200" height="200">
+</div>
     <!-- Div pour la boîte de la première question et toutes les informations qui y sont placées. !-->
     <div class="boiteQ1"> <br> 
   <!-- Titre de la question 1. Div pour la première question !-->
@@ -44,9 +48,11 @@
   <!-- Insertion du logo Paul-D. !-->
     <img id="imgPaulD" src="https://www.hometeamsonline.com/photos/org/COLESECONDAIRECATHOL/homelogo.jpg" /> 
   <!-- Div pour id"questionOperation", question avec choix multiples !-->
-    <div id="questionOperation"> <p> Quelle opération a été utilisée? </p> 
+  <div id="operationcss">
+    <div id="questionOperation"> <p id="optitre"> Quelle opération a été utilisée? </p> 
       <div id="divAffiche2">
   <!-- Div pour les choix multiples !--><!-- Option #1 : addition !-->
+  <div id="optext">
         <input id="rad1" name="rad1" type="radio" value="+" />
           <label for="rad1">+</label> <br>
   <!-- Option #2 : soustraction !-->
@@ -58,6 +64,7 @@
   <!-- Option #4 : division !-->
         <input id="rad4" name="rad1" type="radio" value="/" />
           <label for="rad4">/</label> <br> <br>
+          </div>
   <!-- Bouton pour soumettre le type d'équation utilisé avec onclick qui active "calcule2" !-->
         <input type="button" id="btn2Q1" onclick="calcule2()" />
           <label for="btn2Q1"> Soumettre votre réponse </label>
@@ -65,9 +72,7 @@
       </div>
   <!-- Div ferme "questionOperation" !-->
     </div> 
-  <!-- Div pour "prochainPage" et permettre de se rendre à la prochaine question. Href dans l'image de la flèche noire. !-->
-    <div id="prochainPage"> <a href="symboles5.html"> <img src="https://cdn-icons-png.flaticon.com/512/25/25426.png" width="80" </a> 
-  <!-- Div ferme "prochainPage" !-->
+    </div>
     </div> 
   <!-- Div ferme "Question operation" !-->
     </div>

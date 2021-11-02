@@ -23,6 +23,7 @@ border: 3px black groove;
    width: 200px;
 margin: auto;
 padding: auto;
+cursor: crosshair;
 }
 /* Code pour la barre de naviguation*/
 #startText{

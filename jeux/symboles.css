@@ -104,3 +104,19 @@ opacity: 3;
 #optext {
   text-align: left;
 }
+#gamelink {
+border: 3px black groove;
+ text-align: center;
+   align-items: center;
+   align-content: center;
+   width: 200px;
+   padding: auto;
+   margin: auto;
+position: relative;
+}
+#position {
+position: absolute;
+}
+imgPaulD {
+      filter: drop-shadow(10px 10px 10px #A4BBFF);
+}

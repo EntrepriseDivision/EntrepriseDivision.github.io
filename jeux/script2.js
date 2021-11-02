@@ -51,10 +51,10 @@ var affiche = document.getElementById("divAffiche1");
 
     var affiche2 = document.getElementById("divAffiche2");
     if (message2 == "Bonne réponse") {
-        var message3 =  "<div id='bonneRep'><strong>" + message2 + "<br>  Vous avez gagnez un point" + ".</strong> </div>"
+        var message3 =  "<div id='bonneRep'><strong>" + message2 + "<br>  Vous avez gagnez un point" + ". <div id='prochainPage'><a href='symboles3.html'><img src='https://cdn-icons-png.flaticon.com/512/25/25426.png' width='80' </a> </div> </strong></div>"
             affiche2.innerHTML=message3; 
     } else if (message2 == "Mauvaise réponse") {
-      var message3 = "<div id='mauvRep'><strong>" + message2 + "<br> Votre pointage n'a pas changer" +  ". </strong></div>"
+      var message3 = "<div id='mauvRep'><strong>" + message2 + "<br> Votre pointage n'a pas changer" +  ". <div id='prochainPage'><a href='symboles3.html'><img src='https://cdn-icons-png.flaticon.com/512/25/25426.png' width='80' </a> </div> </strong></div>"
       affiche2.innerHTML=message3;
     }
 

@@ -2,7 +2,7 @@
 <html>
   <!-- Page web du jeu "Symboles Cachés". Code dans le <head> permet de lier le ficher symboles.css et script.js au html. !-->
   <head>
-    <link href="symboles.css" rel="stylesheet" type="text/css"/>
+    <link href="symboles2.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
   <!-- Titre/h2 de la page web. Div ouvre le id bienvenueJeu !-->
@@ -15,6 +15,11 @@
       </div>
   <!-- Div ferme le id bienvenueJeu !-->
     </div>
+
+<div id="gamelink">
+        <img src="v3.jpg"width="200" height="200">
+</div>
+
     <!-- Div pour la boîte de la première question et toutes les informations qui y sont placées. !-->
     <div class="boiteQ1"> <br> 
   <!-- Titre de la question 1. Div pour la première question !-->
@@ -44,7 +49,7 @@
       <div id="divAffiche2">
         <div id="optext">
   <!-- Div pour les choix multiples !--><!-- Option #1 : addition !-->
-  <div ="">
+  <div id="optext">
         <input id="rad1" name="rad1" type="radio" value="+" />
           <label for="rad1">+</label> <br>
   <!-- Option #2 : soustraction !-->
@@ -64,9 +69,6 @@
       </div>
   <!-- Div ferme "questionOperation" !-->
     </div> 
-  <!-- Div pour "prochainPage" et permettre de se rendre à la prochaine question. Href dans l'image de la flèche noire. !-->
-    <div id="prochainPage"> <a href="symboles4.html"> <img src="https://cdn-icons-png.flaticon.com/512/25/25426.png" width="80" </a> 
-  <!-- Div ferme "prochainPage" !-->
     </div> 
     </div>
   <script src="script3.js"> </script>
