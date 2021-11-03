@@ -70,7 +70,6 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
-
 /* Ajout de couleur lors du hover */
 .navbar a:hover {
   background-color: #ddd;
@@ -91,6 +90,15 @@ body {
 }
 /*Style des sous-titres et du texte*/
 #entretien, #gantt, #gramme, #visuelle, #pseudo, #testing {
-  font-family: Roboto;
-  line-height : 1.5em;
+  background-color: rgb(161, 161, 212);
+  max-width: 50%;
+  margin: 2px;
+  border: #ddd;
+  border-width: 4px; 
+  border-style: solid;
+  font-family:"calibri", serif;
+}
+/*Style du tableau de testing*/
+table, th, td {
+  border: 1px solid white;
 }

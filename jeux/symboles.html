@@ -5,6 +5,7 @@
     <link href="symboles.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
+    <div id="allQ1">
   <!-- Titre/h2 de la page web. Div ouvre le id bienvenueJeu !-->
     <div id="bienvenueJeu"> <h2>Bienvenue au quiz Symboles Cachés ! </h1>
   <!-- Boite "Directives" pour faciliter la comprehension de l'utilisateur. Div ouvre class instructions. !-->
@@ -16,25 +17,25 @@
       </div>
   <!-- Div ferme le id bienvenueJeu !-->
     </div>
-    
+  <!-- Div pour game link appartir du logo!-->
     <div id="gamelink">
-    <img src="v3.jpg"width="200" height="200">
-</div>
+    <img src="images/v3.jpg"width="200" height="200">
+    </div>
     <!-- Div pour la boîte de la première question et toutes les informations qui y sont placées. !-->
     <div class="boiteQ1"> <br> 
+          <div id= "divAffiche1">
   <!-- Titre de la question 1. Div pour la première question !-->
       <div id="question1"> <h3 id="titreq1"> Question 1 :</h3>
   <!-- Div pour créer deux boites auxquelles l'utilisateur insère deux nombres. Le placeholder permet que "Nombre 1" et "Nombre 2" apparaissent dans l'arrière-plan des boîtes à insertion. Ceci ajoute de la précision pour l'utilisateur. Div pour les numéros insérés par l'utilisateur. !-->
-      <div id= "divAffiche1">
+
         <input type="number" id="num1Q1" name="num1Q1" placeholder="Nombre 1"/> <br> 
         <input type="number" id="num2Q1" name="num2Q1" placeholder="Nombre 2" /> <br> <br>
   <!-- Div ferme le id "divAffiche1" !-->
       </div>
   <!-- En cliquant sur le bouton "Soumettre", onclick active la fonction "calcule()" (description supplémentaire dans le js). Div "bienvenueJeu" qui ajoute le bouton et le calcule au id. !-->
         <div id="bienvenueJeu">
-          <input type="button" id="btnQ1"  name="btnQ1" onclick="calcule()" />
-  <!-- Label qui affiche "Soumettre" pour le bouton de la question 1. !-->
-            <label for="btnQ1"> Soumettre! </label>
+          <input type="button" id="btnQ1"  name="btnQ1" onclick="calcule()" value="Soumettre!"/>
+
   <!-- Div id "bienvenueJeu" ferme!--> 
         </div>
   <!-- Div id "boiteQ1" ferme !-->
@@ -63,8 +64,8 @@
           <label for="rad4">/</label> <br> <br>
           </div>
   <!-- Bouton pour soumettre le type d'équation utilisé avec onclick qui active "calcule2" !-->
-        <input type="button" id="btn2Q1" onclick="calcule2()" />
-          <label for="btn2Q1"> Soumettre votre réponse </label>
+        <input type="button" id="btn2Q1" onclick="calcule2()" value="Soumettre votre réponse" />
+
   <!-- Div ferme "divAffiche2" !--> 
       </div>
   <!-- Div ferme "questionOperation" !-->
