@@ -37,7 +37,6 @@ text-align: center;
   bottom: 0;
   width: 100%;
 }
-
 /* Style pour les sites dans la barre de naviguation. */
 .navbar a {
   float: left;
@@ -48,7 +47,6 @@ text-align: center;
   text-decoration: none;
   font-size: 17px;
 }
-
 /* Ajout de coleur lors du hover */
 .navbar a:hover {
   background-color: #ddd;
