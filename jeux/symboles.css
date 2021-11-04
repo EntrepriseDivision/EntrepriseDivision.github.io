@@ -46,6 +46,42 @@ input[type=number] {
 input[type=number]::-webkit-outer-spin-button { 
 opacity: 3;
 }
+
+
+.radcss {
+  margin: 10px;
+}
+
+.radcss input[type="radio"] {
+  position: fixed;
+  width: 0;
+}
+
+.radcss label {
+  text-align: left;
+    display: inline-block;
+    background-color: rgb(131, 129, 129);
+    width: 10px;
+    height: 10px;
+    padding: 9px 15px;
+    font-family: Roboto;
+    font-size: 14px;
+    border: 2px solid #444;
+}
+
+.radcss label:hover {
+  background-color: rgb(79, 80, 79);
+  color: black;
+  border: 2px dashed #444;
+}
+
+.radcss input[type="radio"]:checked + label {
+    background-color: rgb(113, 57, 167);
+    border-color: rgb(54, 26, 105);
+    border-style: ridge;
+    color: black;
+}
+
 /* Style pour "Question 1" */
 #titreq1 {
   color: black;
@@ -63,6 +99,8 @@ opacity: 3;
   border-style: solid;
   text-align: center;
   margin-bottom: 5px;
+  color: rgb(111, 221, 221);
+  background-color: rgb(77, 53, 133);
 }
 /* Style et emplacement des informations retrouvees dans la boite de la question 1 */
 .boiteQ1 {

@@ -21,19 +21,19 @@ h2 {
 }
 /* Ajoute la couleur bleu au texte qui apparait comme onclick sur soumettre */
 #q1reponq1 {
-  color: rgb(44, 44, 139);
+  color: rgb(111, 221, 221);
 }
 #q2reponq1 {
-  color: rgb(44, 44, 139);
+  color: rgb(111, 221, 221);
 }
 #q3reponq1 {
-  color: rgb(44, 44, 139);
+  color: rgb(111, 221, 221);
 }
 #q4reponq1 {
-  color: rgb(44, 44, 139);
+  color: rgb(111, 221, 221);
 }
 #q5reponq1 {
-  color: rgb(44, 44, 139);
+  color: rgb(111, 221, 221);
 }
 /* Si l'utilisateur soumet une mauvaise reponse, ce code change la couleur du texte apparait indiquant "Mauvaise reponse. Votre pointage est 0", en rouge. */
 #mauvRep {
@@ -74,7 +74,7 @@ input[type=number] {
   font-family: Courier New;
   font-size: 14px;
   text-align: center;
-  background-color: rgb(73, 185, 230);
+  background-color: rgb(35, 114, 145);
   font-weight: bold;
   text-shadow: 1px 1px #180606;
 }
@@ -84,7 +84,7 @@ opacity: 3;
 }
 /* Style pour "Question 1" */
 #titreq1 {
-  color: black;
+  color: rgb(111, 221, 221);
   font-family: "calibri", serif;
   margin: auto;
 }
@@ -110,14 +110,19 @@ opacity: 3;
   border-style: solid;
   text-align: center;
   margin-bottom: 5px;
+  background-color: rgb(77, 53, 133);
+  color: rgb(111, 221, 221);
 }
 /* Grandeur de l'ecriture de la question. */
 #boitequestion {
   font-size: 13px;
+    background-color: rgb(77, 53, 133);
 }
 /* Margin qui separe la question de les autres informations et la boite. */
 #questionOperation {
   margin-top: 15px;
+    background-color: rgb(77, 53, 133);
+
 }
 /* CSS pour la 3e boite*/
 #operationcss {
@@ -130,11 +135,14 @@ opacity: 3;
   border-style: solid;
   text-align: center;
   margin-bottom: 5px;
+  background-color: rgb(77, 53, 133);
+  color: rgb(111, 221, 221);
 }
 /* Titre dans la 3e boite */
 #optitre {
   font-size: 20px;
   font-family: Roboto;
+  color: rgb(111, 221, 221);
 }
 /* Placement des choix multiples */
 #optext {
@@ -150,4 +158,19 @@ border: 3px black groove;
 margin: auto;
 padding: auto;
 position: relative;
+}
+#btnQ1 , #btn2Q1 , #btnQ2 , #btn2Q2 , #affichepoint {
+            background-color: blueviolet;
+          color: white;
+          padding: 5px 6px;
+          text-align: center;
+          display: inline-block;
+          font-size: 16px;
+          font-family: Roboto;
+          margin: 4px 2px;
+          cursor: pointer;
+}
+#sizerep {
+  font-size: 20px;
+  font-family: Roboto;
 }
