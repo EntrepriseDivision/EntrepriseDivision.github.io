@@ -3,12 +3,11 @@
   <!-- Page web du jeu "Symboles Cachés". Code dans le <head> permet de lier le ficher symboles.css et script.js au html. !-->
   <head>
     <link href="symboles.css" rel="stylesheet" type="text/css"/>
-    <link href="symboles2.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <div id="allQ1">
   <!-- Titre/h2 de la page web. Div ouvre le id bienvenueJeu !-->
-    <div id="bienvenueJeu"> <h2>Bienvenue au quiz Symboles Cachés ! </h1>
+
+<div id="bienvenueJeu"> <h2 id="quiztitre">Bienvenue au quiz Symboles Cachés ! </h1>
   <!-- Boite "Directives" pour faciliter la comprehension de l'utilisateur. Div ouvre class instructions. !-->
   <div id="position">
       <div class="instructions">
@@ -26,16 +25,17 @@
     <div class="boiteQ1"> <br> 
           <div id= "divAffiche1">
   <!-- Titre de la question 1. Div pour la première question !-->
-      <div id="question1"> <h3 id="titreq1"> Question 1 :</h3>
+      <div id="question1"> <h3 id="titreq1"> Question 1 :</h3> </div>
   <!-- Div pour créer deux boites auxquelles l'utilisateur insère deux nombres. Le placeholder permet que "Nombre 1" et "Nombre 2" apparaissent dans l'arrière-plan des boîtes à insertion. Ceci ajoute de la précision pour l'utilisateur. Div pour les numéros insérés par l'utilisateur. !-->
 
         <input type="number" id="num1Q1" name="num1Q1" placeholder="Nombre 1"/> <br> 
         <input type="number" id="num2Q1" name="num2Q1" placeholder="Nombre 2" /> <br> <br>
-  <!-- Div ferme le id "divAffiche1" !-->
-      </div>
   <!-- En cliquant sur le bouton "Soumettre", onclick active la fonction "calcule()" (description supplémentaire dans le js). Div "bienvenueJeu" qui ajoute le bouton et le calcule au id. !-->
         <div id="bienvenueJeu">
           <input type="button" id="btnQ1"  name="btnQ1" onclick="calcule()" value="Soumettre!"/>
+          
+            <!-- Div ferme le id "divAffiche1" !-->
+      </div>
 
   <!-- Div id "bienvenueJeu" ferme!--> 
         </div>
@@ -49,9 +49,12 @@
     <div id="operationcss">
   <!-- Div pour id"questionOperation", question avec choix multiples !-->
     <div id="questionOperation"> <p id="optitre"> Quelle opération a été utilisée? </p> 
+    <!-- Div pour le innerHTML de java -->
       <div id="q1divAffiche2">
+        <!-- Deux div pour ajouter des styles -->
         <div id="optext">
           <div class="radcss">
+
   <!-- Div pour les choix multiples !--><!-- Option #1 : addition !-->
         <input id="rad1" name="rad1" type="radio" value="+" />
           <label for="rad1">+</label> <br>
@@ -63,7 +66,9 @@
           <label for="rad3">x</label> <br>
   <!-- Option #4 : division !-->
         <input id="rad4" name="rad1" type="radio" value="/" />
-          <label for="rad4">/</label> <br> <br>
+          <label for="rad4">/</label> <br>
+
+          <!-- Div ferme radcss-->
           </div>
   <!-- Bouton pour soumettre le type d'équation utilisé avec onclick qui active "calcule2" !-->
         <input type="button" id="btn2Q1" onclick="calcule2()" value="Soumettre votre réponse" />
@@ -75,11 +80,10 @@
   <!-- Div ferme "operationcss" !-->
     </div>
   <!-- Pemert de faire un lien au ficher javascript. Lorsqu'il est place au haut de la page dans le head le code ne s'execute pas de la bonne maniere. !-->
-  </div>
   <br>
   <br>
   <br>
-   <a href="/index.html"> Retour a la page principale </a>
+   <a href="/index.html"> Retour à la page principale </a>
   <script src="script.js"> </script>
   
   </body>

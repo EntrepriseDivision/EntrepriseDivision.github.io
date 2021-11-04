@@ -7,18 +7,135 @@ h2 {
   text-align: center;
 }
 /* Style des elements dans la boite de la question 1 */
+#quiztitre {
+filter: drop-shadow(2px 2px 2px #A4BBFF);
+font-size: 35px;
+}
 #bienvenueJeu {
   align-content: center;
   align-items: center;
   text-align: center;
-  font-family: "calibri", serif;
+  font-family: calibri;
 }
 /* Logo Paul-D emplacement sur la page web */
 #imgPaulD {
   position: absolute;
   right: 10px;
   top: 100px;
+  filter: drop-shadow(10px 10px 10px #A4BBFF);
 }
+/* Style pour "Question 1" */
+#titreq1 {
+  color: rgb(111, 221, 221);
+  font-family: "calibri", serif;
+  margin: auto;
+  font-size: 20px;
+    filter: drop-shadow(10px 10px 10px #A4BBFF);
+}
+/* Ajoute la couleur bleu au texte qui apparait comme onclick sur soumettre */
+#q1reponq1 {
+  color: rgb(111, 221, 221);
+}
+#q2reponq1 {
+  color: rgb(111, 221, 221);
+}
+
+
+/* Style du texte qui apparait comme onclick apres avoir soumis les deux nombres a inserer dans l'equation. */
+input[type=number] {
+  color: blue;
+  height: 30px;
+  font-family: Courier New;
+  font-size: 14px;
+  text-align: center;
+  background-color: rgb(35, 114, 145);
+  font-weight: bold;
+  text-shadow: 1px 1px #180606;
+}
+/* */
+input[type=number]::-webkit-outer-spin-button { 
+opacity: 3;
+}
+
+/* Style et emplacement des informations retrouvees dans la boite de la question 1 */
+.boiteQ1 {
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 2px; 
+  width: 200px;
+  height: 190px;
+  border-style: solid;
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: rgb(77, 53, 133);
+  color: rgb(111, 221, 221);
+    filter: drop-shadow(10px 10px 10px #A4BBFF);
+
+}
+/* Grandeur de l'ecriture de la question. */
+#boitequestion {
+  font-size: 13px;
+    background-color: rgb(77, 53, 133);
+}
+/* Margin qui separe la question de les autres informations et la boite. */
+#questionOperation {
+  margin-top: 15px;
+    background-color: rgb(77, 53, 133);
+}
+/* CSS pour la 3e boite*/
+#operationcss {
+  display: inline block;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 2px; 
+  width: 200px;
+  height: 230px;
+  border-style: solid;
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: rgb(77, 53, 133);
+  color: rgb(111, 221, 221);
+    filter: drop-shadow(10px 10px 10px #A4BBFF);
+}
+/* Titre dans la 3e boite */
+#optitre {
+  font-size: 20px;
+  font-family: Roboto;
+  color: rgb(111, 221, 221);
+}
+/* Placement des choix multiples */
+#optext {
+  text-align: left;
+  font-family: Roboto;
+}
+/* le css pour l'image*/
+#gamelink {
+border: 3px black groove;
+ text-align: center;
+   align-items: center;
+   align-content: center;
+   width: 200px;
+margin: auto;
+padding: auto;
+position: relative;
+  filter: drop-shadow(10px 10px 10px #A4BBFF);
+}
+#btnQ1 , #btn2Q1 , #btnQ2 , #btn2Q2 , #affichepoint {
+            background-color: blueviolet;
+          color: white;
+          padding: 5px 6px;
+          text-align: center;
+          display: inline-block;
+          font-size: 16px;
+          font-family: Roboto;
+          margin: 4px 2px;
+          cursor: pointer;
+}
+#sizerep {
+  font-size: 20px;
+  font-family: Roboto;
+}
+
 /* Ajoute la couleur bleu au texte qui apparait comme onclick sur soumettre */
 #reponq1 {
   color: rgb(44, 44, 139);
@@ -29,7 +146,7 @@ h2 {
 }
 /* Si l'utlisateur soumet une bonne reponse, le texte apparait en vert grace a ce code. */
 #bonneRep {
-  color: green;
+  color: rgb(42, 199, 42);
 }
 /* Style du texte qui apparait comme onclick apres avoir soumis les deux nombres a inserer dans l'equation. */
 input[type=number] {
@@ -46,17 +163,15 @@ input[type=number] {
 input[type=number]::-webkit-outer-spin-button { 
 opacity: 3;
 }
-
-
 .radcss {
   margin: 10px;
 }
-
+/* Changer le style des boutons radios */
 .radcss input[type="radio"] {
   position: fixed;
   width: 0;
 }
-
+/* changer le style qui ne change pas */ 
 .radcss label {
   text-align: left;
     display: inline-block;
@@ -68,25 +183,18 @@ opacity: 3;
     font-size: 14px;
     border: 2px solid #444;
 }
-
+/*style quand tu mets ta souris dessus sans la clicker*/
 .radcss label:hover {
   background-color: rgb(79, 80, 79);
   color: black;
   border: 2px dashed #444;
 }
-
+/*style quand tu mets ta souris dessus et c'est clicker*/
 .radcss input[type="radio"]:checked + label {
     background-color: rgb(113, 57, 167);
     border-color: rgb(54, 26, 105);
     border-style: ridge;
     color: black;
-}
-
-/* Style pour "Question 1" */
-#titreq1 {
-  color: black;
-  font-family: "calibri", serif;
-  margin: auto;
 }
 /* Style et emplacement de la boite contenant les directives du jeu. */
 .instructions {
@@ -94,67 +202,15 @@ opacity: 3;
   margin-left: 5px;
   margin-right: 5px;
   border: 2px; 
-  width: 200px;
-  height: 150px;
   border-style: solid;
   text-align: center;
-  margin-bottom: 5px;
   color: rgb(111, 221, 221);
   background-color: rgb(77, 53, 133);
-}
-/* Style et emplacement des informations retrouvees dans la boite de la question 1 */
-.boiteQ1 {
-  margin-left: 5px;
-  margin-right: 5px;
-  border: 2px; 
-  width: 200px;
-  height: 175px;
-  border-style: solid;
-  text-align: center;
-  margin-bottom: 5px;
-}
-/* Grandeur de l'ecriture de la question. */
-#boitequestion {
-  font-size: 13px;
-}
-/* Margin qui separe la question de les autres informations et la boite. */
-#questionOperation {
-  margin-top: 15px;
-}
-/* CSS pour la 3e boite*/
-#operationcss {
-  display: inline block;
-  margin-left: 5px;
-  margin-right: 5px;
-  border: 2px; 
-  width: 200px;
-  height: 215px;
-  border-style: solid;
-  text-align: center;
-  margin-bottom: 5px;
-}
-/* Titre dans la 3e boite */
-#optitre {
-  font-size: 20px;
-  font-family: Roboto;
-}
-/* Placement des choix multiples */
-#optext {
-  text-align: left;
-}
-#gamelink {
-border: 3px black groove;
- text-align: center;
-   align-items: center;
-   align-content: center;
-   width: 200px;
-   padding: auto;
-   margin: auto;
-position: relative;
+    filter: drop-shadow(10px 10px 10px #A4BBFF);
 }
 #position {
 position: absolute;
 }
-imgPaulD {
-      filter: drop-shadow(10px 10px 10px #A4BBFF);
+#question1 {
+    color: rgb(111, 221, 221);
 }
